@@ -1,7 +1,7 @@
 import numpy as np 
 from sklearn.linear_model import LinearRegression 
 import matplotlib.pyplot as plt
-np.random.seed(40)
+
 
 n = 40 
 
@@ -28,14 +28,14 @@ y = y.reshape((n, 1))
 
 reg= LinearRegression()
 
-reg.fit(x, y.flatten())
+#reg.fit(x, y.flatten())
 
-print("intercept: ", reg.intercept_ , "slop: ", reg.coef_[0])
+#print("intercept: ", reg.intercept_ , "slop: ", reg.coef_[0])
 
 
 # incoperate the intercept and coef 
 
-reg1= LinearRegression(fit_intercept= False)
+#reg1= LinearRegression(fit_intercept= False)
 
 # stack thêm cột 1 vào trước để intercept không chú ý tới nó , mà slope sẽ có 2 phần tử
 
