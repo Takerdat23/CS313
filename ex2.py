@@ -32,4 +32,4 @@ def linear_regression(X, y):
         return theta.T
 
 
-print(linear_regression(X,y ))
+print(linear_regression(X,y )) 
